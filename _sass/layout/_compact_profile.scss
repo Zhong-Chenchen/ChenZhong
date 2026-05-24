@@ -15,6 +15,10 @@ html {
 }
 
 @include breakpoint($large) {
+  .page {
+    padding-right: 0;
+  }
+
   .author__avatar img {
     max-width: 145px;
   }
