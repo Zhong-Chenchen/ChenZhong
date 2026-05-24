@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a master's student (2025 - now) at the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University. I am now a member of the EVA group, advised by Prof. Wei He. I am currently focusing my research on vision-language models, large language models, and remote sensing.
+I am a master's student (2025 - now) at the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University. I received my B.S. degree from the School of Electronic Information, Wuhan University, Wuhan, China, in 2025. I am now a member of the EVA group, advised by Prof. Wei He. I am currently focusing my research on vision-language models, large language models, and remote sensing.
 
 Research Interests
 ======

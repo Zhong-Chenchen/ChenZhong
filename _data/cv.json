@@ -35,6 +35,15 @@
       "endDate": "Present",
       "gpa": null,
       "courses": []
+    },
+    {
+      "institution": "Wuhan University",
+      "area": "School of Electronic Information",
+      "studyType": "B.S.",
+      "startDate": "",
+      "endDate": "2025",
+      "gpa": null,
+      "courses": []
     }
   ],
   "skills": [

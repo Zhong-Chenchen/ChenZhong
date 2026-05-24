@@ -12,6 +12,7 @@ redirect_from:
 Education
 ======
 * M.S. student, State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, 2025 - now
+* B.S., School of Electronic Information, Wuhan University, 2025
 
 Research Interests
 ======
