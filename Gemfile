@@ -9,5 +9,7 @@ group :jekyll_plugins do
   gem 'webrick', '~> 1.8'
 end
 
-gem 'github-pages'
+gem 'github-pages', '= 228'
 gem 'connection_pool', '2.5.0'
+gem 'nokogiri', '= 1.13.10'
+gem 'ffi', '= 1.15.5'
