@@ -21,7 +21,7 @@ I am a master's student (2025 - now) at the State Key Laboratory of Information 
 
 🏆 Honors and Awards
 ======
-<!-- Add award items here, for example: * 2025: Award name, Institution. -->
+* 2024 — Silver Medal (China), China International College Students' Innovation Competition, 中国国际大学生创新大赛全国银奖.
 
 🎓 Education
 ======
