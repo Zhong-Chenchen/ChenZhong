@@ -14,10 +14,10 @@ excerpt: "SenseBench is a diagnostic benchmark for remote sensing low-level visu
 introduction: "We introduce SenseBench to evaluate whether large vision-language models can perceive and describe low-level visual artifacts in remote sensing images. The benchmark builds a physics-based hierarchical taxonomy with over 10K curated instances across 6 major and 22 fine-grained degradation categories, and evaluates models through objective perception and subjective diagnostic description protocols."
 keywords: "Remote sensing, low-level visual perception, image quality assessment, vision-language models, diagnostic description."
 header:
-  teaser: "sensebench-architecture.png"
+  teaser: "sensebench-perdes-color.png"
 ---
 
-![SenseBench architecture]({{ "/images/sensebench-architecture.png" | relative_url }})
+![SenseBench architecture]({{ "/images/sensebench-perdes-color.png" | relative_url }})
 
 SenseBench studies whether large vision-language models can perceive and describe remote sensing low-level visual artifacts. It provides a diagnostic benchmark with remote-sensing-specific degradation categories and evaluates both objective perception and subjective description.
 
