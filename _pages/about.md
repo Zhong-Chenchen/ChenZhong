@@ -26,4 +26,4 @@ Publication entries can be added as Markdown files under `_publications/`. Once 
 
 Contact
 ======
-Email: [2021302121369@whu.edu.cn](mailto:2021302121369@whu.edu.cn)
+Email: [chen_zhong@whu.edu.cn](mailto:chen_zhong@whu.edu.cn)

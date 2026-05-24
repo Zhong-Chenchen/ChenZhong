@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Zhong Chenchen",
-    "email": "2021302121369@whu.edu.cn",
+    "email": "chen_zhong@whu.edu.cn",
     "phone": "",
     "website": "https://zhong-chenchen.github.io/ChenZhong",
     "summary": "Researcher in multimodal learning and efficient vision-language models.",
@@ -13,6 +13,11 @@
       "region": "Hubei"
     },
     "profiles": [
+      {
+        "network": "Google Scholar",
+        "username": "",
+        "url": "https://scholar.google.com/citations?user=BdKBMBgAAAAJ&hl=zh-CN"
+      },
       {
         "network": "GitHub",
         "username": "Zhong-Chenchen",
