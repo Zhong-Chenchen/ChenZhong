@@ -6,8 +6,6 @@ permalink: /publication/2026-05-11-sensebench
 date: 2026-05-11
 venue: "arXiv preprint"
 link: "https://arxiv.org/abs/2605.10576"
-paperurl: "https://arxiv.org/abs/2605.10576"
-paperlabel: "arXiv"
 codeurl: "https://github.com/Zhong-Chenchen/SenseBench"
 short_title: "SenseBench"
 authors: "<strong>Zhong Chen</strong>, Xiao An, Jiaxing Sun, Zihan Gui, Guangyi Yang, and Wei He"
