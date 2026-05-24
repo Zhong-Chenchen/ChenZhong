@@ -159,3 +159,33 @@ html {
     line-height: 1.5;
   }
 }
+
+.education-list {
+  margin-top: 0.6em;
+  margin-bottom: 1.05em;
+}
+
+.education-list__item {
+  display: grid;
+  grid-template-columns: 8.6em 1fr;
+  gap: 0.8em;
+  margin-bottom: 0.65em;
+  align-items: start;
+}
+
+.education-list__date {
+  color: var(--global-text-color-light);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.education-list__text {
+  min-width: 0;
+}
+
+@include breakpoint(max-width $medium) {
+  .education-list__item {
+    grid-template-columns: 1fr;
+    gap: 0.1em;
+  }
+}
