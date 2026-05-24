@@ -26,6 +26,9 @@
       </div>
     {% elsif teaser and post.collection == 'publications' %}
       <div class="publication-card__teaser">
+        {% if post.short_title %}
+          <span class="publication-card__badge">{{ post.short_title }}</span>
+        {% endif %}
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
@@ -58,25 +61,50 @@
           {% if post.authors %}
             <p class="publication-card__authors">{{ post.authors }}</p>
           {% endif %}
-          <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p class="publication-card__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+            {% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
+              <span class="publication-card__links">
+                {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.paperlabel | default: "Paper" }}</a>{% endif %}
+                {% if post.codeurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+                {% if post.slidesurl %}{% if post.paperurl or post.codeurl %} | {% endif %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+                {% if post.bibtexurl %}{% if post.paperurl or post.codeurl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+              </span>
+            {% endif %}
+          </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% if post.collection == 'publications' %}
+      {% if post.introduction or post.keywords %}
+        <ul class="publication-card__summary">
+          {% if post.introduction %}
+            <li><strong>Introduction:</strong> {{ post.introduction }}</li>
+          {% endif %}
+          {% if post.keywords %}
+            <li><strong>Key words:</strong> {{ post.keywords }}</li>
+          {% endif %}
+        </ul>
+      {% elsif post.excerpt and site.read_more != 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% elsif post.excerpt and site.read_more == 'enabled' %}
+        <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      {% endif %}
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
     {% if post.collection == 'publications' %}
-      {% if post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
-        <p class="publication-card__links">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.paperlabel | default: "Paper" }}</a>{% endif %}
-          {% if post.codeurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
-          {% if post.slidesurl %}{% if post.paperurl or post.codeurl %} | {% endif %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
-          {% if post.bibtexurl %}{% if post.paperurl or post.codeurl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
-        </p>
+      {% if post.introduction or post.keywords %}
+      {% elsif post.paperurl or post.codeurl or post.slidesurl or post.bibtexurl %}
+          <p class="publication-card__links">
+            {% if post.paperurl %}<a href="{{ post.paperurl }}">{{ post.paperlabel | default: "Paper" }}</a>{% endif %}
+            {% if post.codeurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+            {% if post.slidesurl %}{% if post.paperurl or post.codeurl %} | {% endif %}<a href="{{ post.slidesurl }}">Slides</a>{% endif %}
+            {% if post.bibtexurl %}{% if post.paperurl or post.codeurl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+          </p>
       {% endif %}
     {% elsif post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
