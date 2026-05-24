@@ -7,14 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-I am Zhong Chenchen, a researcher at Wuhan University working on multimodal learning and efficient vision-language models. My current interests include visual token reduction, model efficiency, and robust evaluation for large multimodal models.
+I am a master's student (2025 - now) at the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University. I am now a member of the EVA group, advised by Prof. Wei He. I am currently focusing my research on vision-language models, large language models, and remote sensing.
 
 Research Interests
 ======
-* Efficient multimodal large language models
-* Visual token pruning and compression
-* Vision-language understanding and reasoning
-* Evaluation and analysis of multimodal systems
+* Vision-language models
+* Large language models
+* Remote sensing
 
 News
 ======

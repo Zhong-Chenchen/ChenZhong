@@ -4,7 +4,7 @@
     "email": "chen_zhong@whu.edu.cn",
     "phone": "",
     "website": "https://zhong-chenchen.github.io/ChenZhong",
-    "summary": "Researcher in multimodal learning and efficient vision-language models.",
+    "summary": "M.S. student at LIESMARS, Wuhan University. Research interests include vision-language models, large language models, and remote sensing.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -29,10 +29,10 @@
   "education": [
     {
       "institution": "Wuhan University",
-      "area": "",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "",
+      "area": "State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS)",
+      "studyType": "M.S.",
+      "startDate": "2025",
+      "endDate": "Present",
       "gpa": null,
       "courses": []
     }
@@ -41,9 +41,9 @@
     {
       "name": "Research",
       "keywords": [
-        "Efficient multimodal large language models",
-        "Visual token pruning and compression",
-        "Vision-language understanding and reasoning"
+        "Vision-language models",
+        "Large language models",
+        "Remote sensing"
       ]
     },
     {
@@ -57,11 +57,11 @@
   "languages": [],
   "interests": [
     {
-      "name": "Multimodal Learning",
+      "name": "Research Interests",
       "keywords": [
-        "Model efficiency",
-        "Multimodal evaluation",
-        "Token reduction"
+        "Vision-language models",
+        "Large language models",
+        "Remote sensing"
       ]
     }
   ],

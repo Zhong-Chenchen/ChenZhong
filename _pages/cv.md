@@ -11,13 +11,13 @@ redirect_from:
 
 Education
 ======
-* Wuhan University
+* M.S. student, State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing (LIESMARS), Wuhan University, 2025 - now
 
 Research Interests
 ======
-* Efficient multimodal large language models
-* Visual token pruning and compression
-* Vision-language understanding and reasoning
+* Vision-language models
+* Large language models
+* Remote sensing
 
 Skills
 ======
