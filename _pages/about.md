@@ -15,6 +15,8 @@ I am a master's student (2025 - now) at the State Key Laboratory of Information 
 
 📚 Selected Publications
 ======
+<p class="publication-note"><sup>*</sup> Equal contribution. <sup>†</sup> Corresponding author.</p>
+
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}

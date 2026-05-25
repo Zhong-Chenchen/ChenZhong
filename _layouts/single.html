@@ -40,9 +40,6 @@ layout: default
           {% if page.authors %}
             <p>{{ page.authors }}</p>
           {% endif %}
-          {% if page.authornote %}
-            <p class="publication-card__authornote">{{ page.authornote }}</p>
-          {% endif %}
           {% if page.venue and page.date %}
             <p><i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% endif %}
